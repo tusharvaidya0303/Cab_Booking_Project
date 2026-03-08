@@ -1,0 +1,48 @@
+
+/* Reset & Smooth UI */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+}
+
+/* Root container */
+#root {
+  min-height: 100vh;
+}
+
+/* Reusable custom utility classes */
+
+.nav-hover {
+  transition: all 0.3s ease;
+}
+
+.nav-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* Smooth button effect */
+.btn-smooth {
+  transition: all 0.3s ease;
+}
+
+.btn-smooth:hover {
+  transform: scale(1.05);
+}
+
+/* Optional: Hide scrollbar but keep scroll */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
